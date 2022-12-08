@@ -1,0 +1,51 @@
+body, html {
+    height: 100%;
+    margin:0;
+  }
+  
+  .main-container {
+    background-image: url("../img/background_mobile.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .nav__contact{
+    background: #343D57;
+    height: 50px;
+  }
+
+  .nav__menu{
+    background: black;
+    height: 50px;
+  }
+
+  .logo__menu{
+    height:50px;
+  }
+
+  .logo__main{
+    height:200px;
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform: translateX(-50%);
+  }
+
+  .nav__contact__right{
+    display: inline-block;
+    float: right;
+    margin:10px;
+  }
+
+  .nav__contact__left{
+    display: inline-block;
+    float: left;
+  }
+
+
+  .tel, .mail{
+      padding:2px;
+
+  }
