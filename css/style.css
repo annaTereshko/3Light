@@ -5,24 +5,37 @@ body, html {
   
   .main-container {
     background-image: url("../img/background_mobile.jpg");
-    height: 100%;
+    height: 100vh;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat:repeat-y;
     background-size: cover;
   }
 
-  .nav__contact{
+  .header{
+   height: 100vh;
+  }
+
+  .nav_contact{
+    display: flex;
+    justify-content: space-between; 
     background: #343D57;
-    height: 50px;
+    height: 66px;
   }
 
   .nav__menu{
     background: black;
-    height: 50px;
+    height: 66px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    width:100%;
+    opacity: 87%;
+
   }
 
   .logo__menu{
-    height:50px;
+    display: inline-block;
+    margin-top:-6px;
+    margin-left:-6px;
   }
 
   .logo__main{
@@ -33,19 +46,38 @@ body, html {
     transform: translateX(-50%);
   }
 
-  .nav__contact__right{
+   .nav_contact__right{
+    display: inline-block; 
+  }
+
+  .nav_contact__left{
     display: inline-block;
-    float: right;
-    margin:10px;
+    margin-top: 13.7px;
+    margin-left: 10px;
+    color: white;
   }
 
-  .nav__contact__left{
+
+  .tel,.mail{
     display: inline-block;
-    float: left;
+    padding:2px;
   }
 
+  .telegram{
+    margin-right: 33px;
+  }
 
-  .tel, .mail{
-      padding:2px;
+  .telegram, .vk{
+    display: inline-block;
+    margin-left: 17.5px;
+    margin-top:22px
+  }
+
+  .flex{
+    display: flex;
+    justify-content:space-around;
+    max-width: 100%;
+    flex-wrap: wrap;
 
   }
+
