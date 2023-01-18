@@ -239,6 +239,10 @@ html{
     margin-top:-3rem;
   }
 
+  .product_title:first-of-type{
+    margin-top:0;
+  }
+
   .product__container{
     background: rgba(122, 138, 154, .1);
     border-radius: .2rem;
