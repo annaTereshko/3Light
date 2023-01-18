@@ -220,7 +220,7 @@ html{
   }
 
   .product:hover .product__container{
-    border:transparent;
+    border: transparent;
     background: none;
     box-shadow: none;
   }
@@ -251,4 +251,8 @@ html{
   .product__title{
     height:1.6rem;
     margin-bottom:.45rem;
+   
+  }
+  .product_title{
+    margin-top:-3rem;
   }
