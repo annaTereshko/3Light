@@ -47,7 +47,8 @@ html{
   }
 
   .logo__main{
-    height:24.8rem;
+    /* height:24.8rem; */
+    height: 66.1vw;;
     position:absolute;
     top:43.75%;
     left:50%;
@@ -255,7 +256,8 @@ html{
     padding:.7rem;
   }
   .product__img{
-    height:16.5rem;
+    /* height:16.5rem; */
+    height:37vw;
   }
 
   .product__title{
