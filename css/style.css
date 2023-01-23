@@ -2,7 +2,7 @@ body{
     height: 100%;
     margin:0;
     background-image: url("../img/background_mobile.jpg");
-    background:linear-gradient(to right, rgba(49, 56, 84) 30%, #1A2022);
+    background:linear-gradient(to right, rgba(49, 56, 84) 20%, #1A2022);
     font-family: calibri;
     animation: gradient 3s ease;
 /*     background-size: 400% 400%;
@@ -51,7 +51,7 @@ html{
     height: 6.6rem;
     width:100%;
     backdrop-filter: blur(1.2rem);
-    top:-3.2rem;
+    /* top:-3.2rem; */
 
   }
 
@@ -144,29 +144,30 @@ html{
   opacity:0;
   z-index:2;
   -webkit-touch-callout:none;
-  top:1.7rem;
-  left:85%;
-  margin-top:0;
-  margin-left:-4px;
+  right:2rem;
+  top:2.2rem;
  
 }
- 
-.navigation span{
+
+.test span{
    
   display:block;
-  z-index: 1;
-  position:relative;
   width:33px;
   height:4px;
   margin-bottom:5px;
   background:rgba(225, 225, 225, .9);
   border-radius:3px;
-  top:1.7rem;
-  left:85%;
-  right:0;
-  transform-origin:3px 2px;
+  /* transform-origin:3px 2px; */
   transition:transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
      
+}
+ 
+.test{
+  z-index: 1;
+  position:relative;
+  top:2.2rem;
+  right:2rem;
+  float: right;
 }
  
 .navigation > input:checked ~ span{
@@ -265,7 +266,7 @@ html{
     border:.1rem solid rgba(226, 226, 226, .1);
    /*  margin:0 24px 30px 0; */
     margin:0 .5rem 3rem .5rem;
-    box-shadow: .8rem .8rem 2rem rgba(168,164, 227, .1); /* change .1*/
+    box-shadow: .8rem .8rem 2rem rgba(168,164, 227, .12); /* change .1*/
 /*  height:17.9rem;
     width:17.9rem; */
     padding:.7rem;
