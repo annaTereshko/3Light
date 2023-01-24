@@ -1,29 +1,35 @@
 body{
     height: 100%;
     margin:0;
-    background-image: url("../img/background_mobile.jpg");
+/*     background-image: url("../img/background_mobile.jpg"); */
     background:linear-gradient(to right, rgba(49, 56, 84) 20%, #1A2022);
     font-family: calibri;
-    animation: gradient 3s ease;
-/*     background-size: 400% 400%;
-    background-position: 500%; */
   }
 
-/*   @keyframes gradient{
+   @keyframes grad{
     0%{
-      background-position: 0 50%;
+      background: #1A2022;
+     
+    }
+    50%{
+      background: transparent;
+
+
+
     }
     100%{
-      background-position: 100% 50%;
+      background: rgba(225, 225, 225, .1);
+      opacity: 1;
     }
 
-  } */
+  }
 
 html{
   font-size: 62.5%;
 }
   
   .main-container {
+    animation: grad 2s ease-in;
 /*  background-color: #1A2022;
     height: 100vh;
     box-shadow:rgba(0, 0, 0, 0.4) 10px 10px 5px; */
