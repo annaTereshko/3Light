@@ -31,15 +31,23 @@ html{
 
   main{
     margin:0 1.8rem;
-    z-index: -1;
+
 
   }
 
   .header{
-    position: sticky;
+   position: sticky;
    height: 100vh;
-   box-shadow:rgba(0, 0, 0, 0.8) 1rem 1rem 4.5rem;
    top:0;
+  }
+
+  .test{
+    /* box-shadow:rgba(0, 0, 0, 0.8) 1rem 1rem 4.5rem; */
+    border:none;
+    height: 50px;
+    margin-top: 0;
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 0.8);
+    margin: -50px auto 10px; 
   }
 
   .nav_contact{
@@ -140,7 +148,6 @@ html{
   }
 
   .navigation{
-    position: sticky;
     display:block;
     -webkit-user-select:none;
     user-select:none;
