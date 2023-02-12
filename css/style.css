@@ -1,6 +1,8 @@
 @font-face {
   font-family: calibri;
+  font-family: casualcontactmf;
   src: url("../fonts/calibri.ttf");
+  src: url("../fonts/casualcontactmf.ttf");
 }
 
 
@@ -31,9 +33,8 @@ html{
   .main-container {
     animation: gradient 2.8s ease-in;
     position: relative;
-/*  background-color: #1A2022;
-    height: 100vh;
-    box-shadow:rgba(0, 0, 0, 0.4) 10px 10px 5px; */
+    /* box-shadow:rgba(0, 0, 0, 0.4) 1rem 1rem .5rem;  
+    box-shadow:rgba(0, 0, 0, 0.8) 1rem 1rem 4.5rem;*/
   }
 
   main{
@@ -41,13 +42,12 @@ html{
 
   }
 
-  .test{
-    /* box-shadow:rgba(0, 0, 0, 0.8) 1rem 1rem 4.5rem; */
+
+  .shadow{
     border:none;
-    height: 50px;
-    margin-top: 0;
-    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 0.8);
-    margin: -50px auto 10px; 
+    height: 5rem;
+    box-shadow: 0 3rem 3rem -2rem rgba(0, 0, 0, 0.8);
+    margin: -5rem auto 1rem; 
   }
 
   .nav_contact{
@@ -58,7 +58,6 @@ html{
   }
 
   .nav__menu{
-    position: relative;
     background: rgba(0,0,0,.8);
     height: 6.6rem;
     width:100%;
@@ -77,19 +76,19 @@ html{
 
   .logo__menu:hover{
     opacity:100%;
-    filter: drop-shadow(0px 0px 10px rgb(201, 205, 255));
+    filter: drop-shadow(0 0 1rem rgb(201, 205, 255));
   }
 
   .logo__main{
-    width: 70vw;;
+    width: 70vw;
     position:absolute;
     top:43.75%;
     left:50%;
     z-index: -1;
     transform: translateX(-50%);
     animation: logo 2.8s;
-    filter: drop-shadow(0px 0px 30px rgb(201, 205, 255))
-            drop-shadow(11px 18px 0px rgb(0, 0, 20));
+    filter: drop-shadow(0 0 3rem rgb(201, 205, 255))
+            drop-shadow(1.1rem 1.8rem 0 rgb(0, 0, 20));
   }
 
 /*   @keyframes logo{
@@ -104,7 +103,7 @@ html{
     }
     100%{
       opacity: 1;
-      filter: drop-shadow(11px 18px 0px rgb(0, 0, 20));
+      filter: drop-shadow(1.1rem 1.8rem 0 rgb(0, 0, 20));
      
     }
 
@@ -121,6 +120,7 @@ html{
   }
   .nav_contact__left__icon .mail{
     width:2.1rem;
+    padding-left: .2rem;
   }
   .nav_contact__left__icon .tel{
     width:2.4rem;
@@ -134,12 +134,6 @@ html{
     top:-.3rem;
     white-space: nowrap;
   }
-
-  .nav_contact__left__icon .mail{
-    padding-left: .2rem;
-  }
-
-
 
   .telegram{
     margin-right: 3.3rem;
@@ -186,7 +180,7 @@ html{
 .nav__menu > input{
  
   display:block;
-  width:30px;
+  width:3rem;
   height:2rem;
   position:absolute;
   cursor:pointer;
@@ -203,18 +197,18 @@ html{
   
   position: relative;
   display:block;
-  width:30px;
+  width:3rem;
   height:.2rem;
   background:rgba(225, 225, 225, .9);
-  margin-bottom: 5px;
-  transform-origin:3px 2px;
+  margin-bottom: .5rem;
+  transform-origin:.3rem .2rem;
   transition:transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
      
 }
 
-.navigation__button span:nth-child(1) { top: 1px; }
-.navigation__button span:nth-child(2) { top: 2px; }
-.navigation__button span:nth-child(3) { top: 3px; }
+.navigation__button span:nth-child(1) { top: .1rem; }
+.navigation__button span:nth-child(2) { top: .2rem; }
+.navigation__button span:nth-child(3) { top: .3rem; }
 
  
  .navigation__button{
@@ -226,7 +220,7 @@ html{
  
 .nav__menu > input:checked ~ .navigation__button > span{
  
-  transform:rotate(45deg) translate(-2px,-1px);
+  transform:rotate(45deg) translate(-.2rem,-.1rem);
  
 }
  
@@ -239,7 +233,7 @@ html{
  
 .nav__menu > input:checked ~ .navigation__button > span:last-of-type{
  
-  transform:rotate(-45deg) translate(-0, -1px);
+  transform:rotate(-45deg) translate(-0, -.1rem);
  
 }
  
@@ -250,16 +244,16 @@ html{
   list-style-type:none;
   width:100%;
   height:100%;
-  margin-top:66px;
-  padding-left:0px;
-  padding-top:30px;
+  margin-top:6.6rem;
+  padding-left:0rem;
+  padding-top:3rem;
   background:rgba(0, 0, 0, .4);
   -webkit-font-smoothing:antialiased;
   /* to stop flickering of text in safari */
   transform-origin:0% 0%;
   transform:translate(-150%, 0%);
   text-align: end;
-  backdrop-filter: blur(6rem);
+  backdrop-filter: blur(8rem);
 
    
 }
@@ -268,15 +262,15 @@ html{
  
   height:6rem;
   box-sizing:border-box;
-  padding-right: 20px;
+  padding-right: 2rem;
  
 }
      
-.nav__menu:has(input:checked) ~ .header > .navigation > ul{
+/* .nav__menu:has(input:checked) ~ .header > .navigation > ul{
 
   transform:none; 
 
-}
+}*/
 
 
   .flex{
@@ -304,7 +298,6 @@ html{
   }
 
   .products-title {
-    /* padding:114px 0 31px 0; */
     padding:6.2rem 0 3.1rem 0;
     color:rgba(225, 225, 225, .8);
     text-align: center;
@@ -312,26 +305,117 @@ html{
     margin-top:-3rem;
   }
 
-  .product_title:first-of-type{
+  .products-title:first-of-type{
     margin-top:0;
   }
 
   .product__container{
+    display:block;
     background: rgba(122, 138, 154, .1);
     border-radius: .2rem;
     border:.1rem solid rgba(226, 226, 226, .1);
-   /*  margin:0 24px 30px 0; */
     margin:0 .5rem 3rem .5rem;
-    box-shadow: .8rem .8rem 2rem rgba(168,164, 227, .12); /* change .1*/
+    box-shadow: .8rem .8rem 2rem rgba(168,164, 227, .12);
     padding:.7rem;
   }
   .product__img{
     height:37vw;
   }
 
+  .tristis:hover .product__container{
+    filter: drop-shadow(0rem 0rem 5rem rgb(201, 205, 255))
+            drop-shadow(0rem 0rem 5rem rgb(201, 205, 255));
+  }
+
   .product__title{
+    font-family: casualcontactmf;
+    font-size: 1.2rem;
+    display: inline-block;
     position: relative;
     height:1.6rem;
     margin-bottom:.45rem;
     opacity: 40%;
+    color:rgba(225, 225, 225, .8);
+  }
+
+  .footer-divider{
+    position: relative;
+    opacity:50%;
+    margin:7rem 0 0;
+    border:none;
+    height:.1rem;
+    background-color:white;
+    z-index: -1;
+  }
+
+  footer{
+    height:6.6rem;
+    margin:0 8.1vw;
+
+  }
+
+  .footer-flex{
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .footer-text{
+    font-size: 1.3rem;
+    color:white;
+    opacity: 50%;
+  }
+
+  .copyright{
+    z-index: -1;
+  }
+
+  .navigation_desktop{ 
+    display:none;
+  }
+
+  /*   Products   */
+  .background{
+    background-image:url(../img/nana_slider.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+
+  @media only screen and (min-width:600px){
+
+    .nav_contact{
+      display:none;
+    }
+
+    .logo__main{
+      width: 20vw;
+      top:40%;
+      left:65%;
+    }
+
+    .product__img{
+      height:20vw;
+    }
+
+    #checkbox, .navigation__button, #navigation{
+      display:none;
+    }
+
+    .navigation_desktop{ 
+      display:block;
+    }
+
+    #navigation_desktop{
+      display:flex;
+      padding:0;
+    }
+
+    .navigation > ul{
+      margin-top:-.6rem;
+      background:none;
+      transform:none;
+      backdrop-filter: none; 
+      justify-content: flex-end;
+    } 
   }
