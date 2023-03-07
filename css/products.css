@@ -1,0 +1,135 @@
+ .img_slider{
+    position: relative;
+
+}
+.header{
+    height:0;
+    clear: right;
+}
+
+.slider{
+    position: relative;
+    width:100%;
+/*     box-shadow:rgba(0, 0, 0, 0.8) 1rem 1rem 4.5rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 120%, 0% 120%); */
+    z-index:-2;
+}
+
+.img__product{
+    margin-top:4.8rem;
+    width:45vw;
+}
+
+.arrow{
+    position: absolute;
+    height:5rem;
+    top:50%;
+    transform: translateY(-50%);
+    
+}
+.arrow-right{
+    transform:translateX(-100%);
+}
+
+
+.slider_title{
+    display: block;
+    position: relative;
+    text-align: end;
+    font-size: 2rem;
+    font-family: casualcontactmf;
+    height:4.6rem;
+    background:linear-gradient(to right, transparent 60%, black);
+    bottom:4.85rem;
+    padding-right: 1.8rem;
+    padding-top:1rem;
+    box-sizing: border-box;
+    z-index:-1;
+}
+
+.collapse{
+    height:0;
+}
+
+.flex{
+    justify-content:space-between;
+   /* flex-wrap: nowrap; */
+}
+
+.table-line p{
+    font-size: 1.5rem;
+    font-style: italic;
+    margin:0;
+    white-space: nowrap;
+}
+.table-line:nth-of-type(even){
+    background-color: rgba(102,102,102,.3);
+}
+
+.title {
+    padding:3.5rem 0 2.3rem 0;
+    color:rgba(225, 225, 225, .8);
+    font-size: 1.6rem;
+  }
+  .diagram{
+      width:100%;
+  }
+
+  .diagram_container{
+    border:.1rem solid rgb(127,127,137);
+    padding:1.5rem 2.5rem;
+  }
+  .footer-flex{
+      flex-wrap: wrap;
+  }
+  .flex-desktop{
+      display: block;
+  }
+
+  /*CHANGE*/
+  .mobile{
+      display: none;
+  }
+
+  .desktop{
+      display: none;
+  }
+
+  @media only screen and (min-width:600px){
+
+    .flex-mobile{
+        display: none;
+    }
+
+    .flex-desktop{
+        display: flex;
+    }
+
+    .mobile{
+        display: block;
+    }
+    .diagram{
+        width:15vw;
+    }
+
+    .desktop{
+        display: flex;
+    }
+    .test{
+        display: none;
+    }
+    .img__product-desktop{
+        width:100%;
+    }
+    .product_model-desktop{
+        width:50%;
+    }
+    .diagram_container{
+        width:25%;
+    }
+    .diagram{
+        width:100%;
+    }
+
+
+  }

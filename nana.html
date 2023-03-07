@@ -4,10 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-        <!-- <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet"> -->
-
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/products.css">
         
         <title>3Light</title>
     </head>
@@ -30,8 +28,7 @@
             </div>
         </div>
         <div class="main-container">
-            <div class="background">
-                <div class="nav__menu">
+                <div class="nav__menu flex">
                     <img src="img/menu-logo_mobile.png" alt="Logo" class="logo__menu">
                     <nav class="navigation navigation_desktop">        
                         <ul id="navigation_desktop">
@@ -46,7 +43,7 @@
                         <span></span>
                         <span></span>
                         <span></span>
-                    </div>  
+                    </div>
                 </div>
                 <div class="header">
                     <nav class="navigation">        
@@ -57,11 +54,97 @@
                                 <li><a href="">КОНТАКТЫ</a></li>            
                             </ul>
                     </nav>
-                </div> 
-            </div>
-            <hr class="shadow">
+                </div>
+                 <div class="img_slider">          
+                    <img class="slider"
+                    srcset="img/nana-slider-mobile.png 856w, img/nana-slider-desktop.png 4010w"
+                    sizes="(max-width: 600px) 856px, 4010px"
+                    src="img/nana-slider-desktop.png"
+                    alt="" />
+                     <div class="flex">
+                        <a class="" href=""><img class="arrow" src="img/arrow-left.png" alt=""></a>
+                        <a class="" href=""><img class="arrow arrow-right" src="img/arrow-right.png" alt=""></a>
+                    </div>  
+                    <div class="collapse"><span class="slider_title">HAHA</span></div>
+                </div>
+                <hr class="shadow">
             <main>
-               
+                <div class="flex flex-desktop">
+                    <div class="flex flex-mobile">
+                        <img src="img/nana_products.png" alt="" class="img__product">
+                        <img src="img/nana_model.png" alt="" class="img__product">    
+                    </div>
+                     <div class="mobile">
+                        <img src="img/nana_products.png" alt="" class="img__product-desktop">
+                    </div>
+                    <div>
+                        <div class="title"><span>ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</span></div>
+                        <div class="table">
+                            <div class="flex table-line">
+                                <p>Габариты(AxBxH):</p>
+                                <p>200x200x600</p>
+                            </div>
+                            <div class="flex table-line">
+                                <p>Цветовая температура:</p>
+                                <p>2700K</p>
+                            </div>
+                            <div class="flex table-line">
+                                <p>Мощность:</p>
+                                <p>9 Вт</p>
+                            </div>
+                            <div class="flex table-line">
+                                <p>Подключение:</p>
+                                <p>AC 220В</p>
+                            </div>
+                            <div class="flex table-line">
+                                <p>Световой поток:</p>
+                                <p>1412 лм</p>
+                            </div>
+                            <div class="flex table-line">
+                                <p>Световая отдача светодиодов:</p>
+                                <p>до 170 лм/Вт</p>
+                            </div>
+                            <div class="flex table-line">
+                                <p>Оптика:</p>
+                                <p>ассиметричная 120⁰x60⁰</p>
+                            </div>
+                            <div class="flex table-line">
+                                <p>CRI:</p>
+                                <p>>80</p>
+                            </div>
+                            <div class="flex table-line">
+                                <p>Цветовая температура:</p>
+                                <p>2700K</p>
+                            </div>
+                            <div class="flex table-line">
+                                <p>Степень защиты:</p>
+                                <p>IP67</p>
+                            </div>
+                            <div class="flex table-line">
+                                <p>Температура эксплуатации:</p>
+                                <p>от -50°C до +50°C</p>
+                            </div>
+                            <div class="flex table-line">
+                                <p>Тип установки:</p>
+                                <p>накладной</p>
+                            </div>
+                            <div class="flex table-line">
+                                <p>Материал:</p>
+                                <p>алюминий, сталь, дерево</p>
+                            </div>
+                            <div class="flex table-line">
+                                <p>Срок службы (источника света): </p>
+                                <p>до 100 000 ч.</p>
+                            </div>
+                        </div>
+                        <div class="title"><span>ДИАГРАММА ОСВЕЩЕННОСТИ</span></div>
+                         <div class="flex desktop">
+                            <img src="img/nana_model.png" alt="" class="product_model-desktop">
+                            <div class="diagram_container"><img class="diagram" src="img/nana_diagram.png" alt=""></div>
+                        </div>
+                        <div class="diagram_container test"><img class="diagram" src="img/nana_diagram.png" alt=""></div>
+                    </div>
+                </div>
             </main>
             <hr class="footer-divider">
             <footer class="flex footer-flex">
