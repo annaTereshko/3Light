@@ -14,22 +14,22 @@
         <div class="nav_contact">
             <div class="nav_contact__left">
                 <div class="nav_contact__left__icon">
-                    <img src="img/tel.png" alt="Email" class="tel">
-                    <span class="">+7(495) 111-11-11</span>
+                    <a href="tel:+7(495) 111-11-11"><img src="img/tel.png" alt="Телефон" class="tel"></a>
+                    <a href="tel:+7(495) 111-11-11"><span>+7(495) 111-11-11</span></a>
                 </div>
                 <div class="nav_contact__left__icon">
-                    <img src="img/mailto.png" alt="Telephone" class="mail">
-                    <span class="mail">info@3light.ru</span>
+                    <a href= "mailto:info@3light.ru"><img src="img/mailto.png" alt="Электорная почта" class="mail"></a>
+                    <a href= "mailto:info@3light.ru"><span class="mail">info@3light.ru</span></a>
                 </div>
             </div>
             <div class="nav_contact__right">
-                <img src="img/logo-vk.png" alt="Vk" class="vk">
-                <img src="img/logo-telegram.png" alt="Telegram" class="telegram">                    
+                <a href=""><img src="img/logo-vk.png" alt="Vk" class="vk"></a>
+                <a href=""><img src="img/logo-telegram.png" alt="Telegram" class="telegram"></a>                    
             </div>
         </div>
         <div class="main-container">
                 <div class="nav__menu flex">
-                    <img src="img/menu-logo_mobile.png" alt="Logo" class="logo__menu">
+                    <a href="index.html"><img src="img/menu-logo_mobile.png" alt="Logo" class="logo__menu"></a>
                     <nav class="navigation navigation_desktop">        
                         <ul id="navigation_desktop">
                             <li><a href="">ФОРМА ЗАЯВКИ</a></li>
@@ -61,25 +61,25 @@
                     sizes="(max-width: 600px) 856px, 4010px"
                     src="img/nana-slider-desktop.png"
                     alt="" />
-                     <div class="flex">
-                        <a class="" href=""><img class="arrow" src="img/arrow-left.png" alt=""></a>
-                        <a class="" href=""><img class="arrow arrow-right" src="img/arrow-right.png" alt=""></a>
+                     <div class="flex arrow">
+                        <a class="test" href=""><img src="img/arrow-left.png" alt=""></a>
+                        <a class="test" href=""><img class="arrow-right" src="img/arrow-right.png" alt=""></a>
                     </div>  
                     <div class="collapse"><span class="slider_title">HAHA</span></div>
                 </div>
                 <hr class="shadow">
             <main>
                 <div class="flex flex-desktop">
-                    <div class="flex flex-mobile">
-                        <img src="img/nana_products.png" alt="" class="img__product">
-                        <img src="img/nana_model.png" alt="" class="img__product">    
+                    <div class="flex hide_on_desktop">
+                        <img src="img/nana_products.png" alt="" class="image smallImage_mobile">
+                        <img src="img/nana_model.png" alt="" class="image smallImage_mobile">
                     </div>
-                     <div class="mobile">
-                        <img src="img/nana_products.png" alt="" class="img__product-desktop">
+                     <div class="flex-width hide_on_mobile">
+                        <img src="img/nana_products_desktop.png" alt="" class="image diagram">
                     </div>
-                    <div>
-                        <div class="title"><span>ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</span></div>
-                        <div class="table">
+                    <div class="flex-width column">
+                        <div>
+                            <div class="title"><span>ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</span></div>
                             <div class="flex table-line">
                                 <p>Габариты(AxBxH):</p>
                                 <p>200x200x600</p>
@@ -137,12 +137,12 @@
                                 <p>до 100 000 ч.</p>
                             </div>
                         </div>
-                        <div class="title"><span>ДИАГРАММА ОСВЕЩЕННОСТИ</span></div>
-                         <div class="flex desktop">
-                            <img src="img/nana_model.png" alt="" class="product_model-desktop">
-                            <div class="diagram_container"><img class="diagram" src="img/nana_diagram.png" alt=""></div>
+                        <div class="title hide_on_desktop"><span>ДИАГРАММА ОСВЕЩЕННОСТИ</span></div>
+                         <div class="flex hide_on_mobile">
+                            <img src="img/nana_model.png" alt="" class="image small">
+                            <img class="image small" src="img/nana_diagram.png" alt="">
                         </div>
-                        <div class="diagram_container test"><img class="diagram" src="img/nana_diagram.png" alt=""></div>
+                        <img class="image bigImage_mobile hide_on_desktop" src="img/nana_diagram.png" alt="">
                     </div>
                 </div>
             </main>

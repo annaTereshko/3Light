@@ -1,5 +1,6 @@
  .img_slider{
     position: relative;
+    margin-top:6.6rem;
 
 }
 .header{
@@ -15,22 +16,28 @@
     z-index:-2;
 }
 
-.img__product{
-    margin-top:4.8rem;
-    width:45vw;
+.image{
+    padding:1.5rem 1.5rem;
+    border:.2rem solid rgba(127,127,137, .5);
+    box-sizing: border-box;
 }
+
+.smallImage_mobile{
+    width:47.5%;
+}
+
+.bigImage_mobile{
+    width:100%;
+}
+
 
 .arrow{
     position: absolute;
     height:5rem;
     top:50%;
     transform: translateY(-50%);
-    
+    width:100%;
 }
-.arrow-right{
-    transform:translateX(-100%);
-}
-
 
 .slider_title{
     display: block;
@@ -62,12 +69,12 @@
     margin:0;
     white-space: nowrap;
 }
-.table-line:nth-of-type(even){
+.table-line:nth-of-type(odd){
     background-color: rgba(102,102,102,.3);
 }
 
 .title {
-    padding:3.5rem 0 2.3rem 0;
+    margin:3.5rem 0 2.3rem 0;
     color:rgba(225, 225, 225, .8);
     font-size: 1.6rem;
   }
@@ -75,10 +82,11 @@
       width:100%;
   }
 
-  .diagram_container{
-    border:.1rem solid rgb(127,127,137);
-    padding:1.5rem 2.5rem;
+  .product-container{
+    margin-top:4.8rem;
+    border:.2rem solid rgba(127,127,137, .5);
   }
+
   .footer-flex{
       flex-wrap: wrap;
   }
@@ -87,48 +95,60 @@
   }
 
   /*CHANGE*/
-  .mobile{
-      display: none;
-  }
 
-  .desktop{
+  .hide_on_mobile{
       display: none;
   }
 
   @media only screen and (min-width:600px){
 
-    .flex-mobile{
-        display: none;
+    .img_slider{
+        margin-top:0;
+    }
+
+    .image{
+        padding:.3rem .3rem;
     }
 
     .flex-desktop{
         display: flex;
     }
+    .product-container{
+        margin-top: 0;
+        height:100%;
+    }
 
-    .mobile{
+    .hide_on_mobile{
         display: block;
     }
+
     .diagram{
-        width:15vw;
+        width:100%;
+        margin-top:3.5rem;
+    }
+    .flex-width{
+        width:45vw;
+    }
+    .small{
+        width:38%;
+        margin: 1rem 4rem 0 0;
+        margin-bottom: auto;
     }
 
-    .desktop{
+    .hide_on_desktop{
+        display:none;
+    }
+    .column{
+        flex-direction: column;
         display: flex;
+        justify-content: space-between;
     }
-    .test{
-        display: none;
+
+    .table-line p{
+        font-size: 2.3rem;
     }
-    .img__product-desktop{
-        width:100%;
-    }
-    .product_model-desktop{
-        width:50%;
-    }
-    .diagram_container{
-        width:25%;
-    }
-    .diagram{
-        width:100%;
+    .title{
+        font-size: 2.6rem;
     }
 
 

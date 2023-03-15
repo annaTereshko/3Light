@@ -80,15 +80,23 @@ html{
   }
 
   .logo__main{
+    /* position: absolute; */
     width: 70vw;
-    position:absolute;
-    top:43.75%;
-    left:50%;
+/*     top:43.75%;
+    left:50%; */
     z-index: -1;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
     animation: logo 2.8s;
     filter: drop-shadow(0 0 3rem rgb(201, 205, 255))
             drop-shadow(1.1rem 1.8rem 0 rgb(0, 0, 20));
+  }
+
+  .logo-box__main-logo{
+    width:100%;
+    position:absolute;
+    top:43.75%;
+    text-align: center;
+
   }
 
 /*   @keyframes logo{
@@ -375,9 +383,9 @@ html{
     display:none;
   }
   
-
-
-  
+  .hide_on_mobile{
+    display:none;
+  }
 
 
 
@@ -388,6 +396,10 @@ html{
       position: relative;
       background-image: url(../img/background_desktop.png);
       z-index: -2;
+      width:100%;
+      background-size: cover;
+      background-position: left bottom;
+      height: 100vh;
     }
 
 
@@ -398,8 +410,12 @@ html{
 
     .logo__main{
       width: 30vw;
-      top:25%;
-      right:0;
+      margin-right: 20%;
+    }
+
+    .logo-box__main-logo{
+      top:30%;
+      text-align: right;
     }
 
     .product__img{
@@ -428,4 +444,14 @@ html{
       height:0;
       left:0;
     } 
+
+    .product_placeholder{
+      margin:0 .5rem 3rem .5rem;
+      padding:.7rem;
+    }
+
+    .hide_on_mobile{
+      display: block;
+  }
+
   }
