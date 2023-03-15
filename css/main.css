@@ -31,10 +31,15 @@ body{
 html{
   font-size: 62.5%;
 }
+
+ img {
+  pointer-events: none;
+  user-select: none;
+}
   
   .main-container {
     animation: gradient 2.8s ease-in;
-    position: relative;
+    position: ;
     /* box-shadow:rgba(0, 0, 0, 0.4) 1rem 1rem .5rem;  
     box-shadow:rgba(0, 0, 0, 0.8) 1rem 1rem 4.5rem;*/
   }
@@ -59,7 +64,7 @@ html{
     height: 6.6rem;
   }
 
-  .nav__menu{
+  .nav_menu{
     background: rgba(0,0,0,.5);
     height: 6.6rem;
     width:100%;
@@ -69,17 +74,17 @@ html{
     z-index: 1;
   }
 
-  .logo__menu{
+  .logo_menu{
     margin-top:-1rem;
     margin-left:-.6rem;
   }
 
-  .logo__menu:hover{
+  .test:hover{
     opacity:100%;
     filter: drop-shadow(0 0 1rem rgb(201, 205, 255));
   }
 
-  .logo__main{
+  .logo_main{
     /* position: absolute; */
     width: 70vw;
 /*     top:43.75%;
@@ -91,7 +96,7 @@ html{
             drop-shadow(1.1rem 1.8rem 0 rgb(0, 0, 20));
   }
 
-  .logo-box__main-logo{
+  .container__logo_main{
     width:100%;
     position:absolute;
     top:43.75%;
@@ -188,7 +193,7 @@ html{
 
 }
  
-.nav__menu > input{
+.nav_menu > input{
  
   display:block;
   width:3rem;
@@ -229,20 +234,20 @@ html{
   float: right;
 } 
  
-.nav__menu > input:checked ~ .navigation__button > span{
+.nav_menu > input:checked ~ .navigation__button > span{
  
   transform:rotate(45deg) translate(-.2rem,-.1rem);
  
 }
  
-.nav__menu > input:checked ~ .navigation__button > span:nth-of-type(2){
+.nav_menu > input:checked ~ .navigation__button > span:nth-of-type(2){
 
   opacity:0;
   transform:rotate(0deg) scale(0.2, 0.2);
 
 }
  
-.nav__menu > input:checked ~ .navigation__button > span:last-of-type{
+.nav_menu > input:checked ~ .navigation__button > span:last-of-type{
  
   transform:rotate(-45deg) translate(-0, -.1rem);
  
@@ -277,7 +282,7 @@ html{
  
 }
      
-/* .nav__menu:has(input:checked) ~ .header > .navigation > ul{
+/* .nav_menu:has(input:checked) ~ .header > .navigation > ul{
 
   transform:none; 
 
@@ -349,7 +354,7 @@ html{
     color:rgba(225, 225, 225, .8);
   }
 
-  .footer-divider{
+  .footer_divider{
     position: relative;
     opacity:50%;
     margin:7rem 0 0;
@@ -364,12 +369,12 @@ html{
     margin:0 1.8rem;
   }
 
-  .footer-flex{
+  .footer_flex{
     justify-content: space-between;
     align-content: center;
   }
 
-  .footer-text{
+  .footer_text{
     font-size: 1.3rem;
     color:white;
     opacity: 50%;
@@ -408,12 +413,12 @@ html{
     }
     
 
-    .logo__main{
+    .logo_main{
       width: 30vw;
       margin-right: 20%;
     }
 
-    .logo-box__main-logo{
+    .container__logo_main{
       top:30%;
       text-align: right;
     }

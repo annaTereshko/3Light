@@ -87,7 +87,7 @@
     border:.2rem solid rgba(127,127,137, .5);
   }
 
-  .footer-flex{
+  .footer_flex{
       flex-wrap: wrap;
   }
   .flex-desktop{

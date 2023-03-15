@@ -1,0 +1,84 @@
+.header{
+    height:0; 
+}
+main{
+    margin-top:11rem
+}
+.form_text{
+    font-size:1.8rem;
+    font-style: italic;
+}
+
+label{
+    font-size:1.6rem;
+    font-style: italic;
+}
+input[type=text], textarea {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 3px;
+  resize: vertical;
+  background: rgba(102,102,102,.3);
+  border:none;
+  outline:none;
+  color:white;
+}
+
+input[type=submit] {
+  background-color: transparent;
+  padding: 5px 10px;
+  border: 2px solid rgba(255,255,255,.8);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size:2rem;
+  color:rgba(255,255,255,.8);
+}
+
+input[type=submit]:hover {
+    color: white;
+    border-color: white;
+}
+@media only screen and (min-width:600px){
+
+    body{
+/*         background-image: url(../img/background_desktop.png);
+        width:100%;
+        background-size: cover;
+        background-position: left bottom; */
+    }
+
+    .header{
+        background: none;
+    }
+
+    .footer_divider{
+        display: inline-block;
+        width:70%;
+        clear:right;
+    }
+/*     form {
+        width:40%;
+    } */
+/*     .float-right{
+        float:right;
+    } */
+    /* .form_text{text-align: right;} */
+
+     .form_container{
+        position: absolute;
+        width: 40%;
+        right:0;
+    }
+    .main-container{
+        position: relative;
+        height: 100vh;
+        background-image: url(../img/background_desktop.png);
+        width:100%;
+        background-size: cover;
+        background-position: left bottom;
+
+    }
+
+}
