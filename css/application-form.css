@@ -4,6 +4,9 @@
 main{
     margin-top:11rem
 }
+.main-container{
+    height: 100vh;
+}
 .form_text{
     font-size:1.8rem;
     font-style: italic;
@@ -73,7 +76,6 @@ input[type=submit]:hover {
     }
     .main-container{
         position: relative;
-        height: 100vh;
         background-image: url(../img/background_desktop.png);
         width:100%;
         background-size: cover;
