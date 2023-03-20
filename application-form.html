@@ -28,11 +28,13 @@
             </div>
         </div>
         <div class="nav_menu"> 
-            <a href="index.html"><img src="img/menu-logo_mobile.png" alt="Логотип 3Light" class="logo_menu"></a>
+            <div class="container__logo_menu">
+                <a href="index.html"><img src="img/menu-logo_mobile.png" alt="Логотип 3Light" class="logo_menu"></a>
+            </div>
             <nav class="navigation navigation_desktop">        
                 <ul id="navigation_desktop">
                     <li><a href="application-form.html">ФОРМА ЗАЯВКИ</a></li>
-                    <li><a href="products.html">ПРОДУКЦИЯ</a></li>
+                    <li><a href="#products">ПРОДУКЦИЯ</a></li>
                     <li><a href="about-company.html">О КОМПАНИИ</a></li>
                     <li><a href="contact.html">КОНТАКТЫ</a></li>            
                 </ul>
@@ -48,7 +50,7 @@
             <nav class="navigation">        
                     <ul id="navigation">
                         <li><a href="application-form.html">ФОРМА ЗАЯВКИ</a></li>
-                        <li><a href="products.html">ПРОДУКЦИЯ</a></li>
+                        <li><a href="#products">ПРОДУКЦИЯ</a></li>
                         <li><a href="about-company.html">О КОМПАНИИ</a></li>
                         <li><a href="contact.html">КОНТАКТЫ</a></li>              
                     </ul>
@@ -68,16 +70,20 @@
                     <input type="text" id="lname" name="lastname" required>
                 
                     <label for="subject">Ваше сообщение или комментарий*</label>
-                    <textarea id="subject" name="subject" style="height:200px" required></textarea>
-                
+                    <textarea id="subject" name="subject" required></textarea>
+                    <!-- <input type="checkbox" id="privacy_policy" name="privacy_policy" value="Privacy Policy"> -->
+                    <!-- <label for="privacy_policy" class="privacy_policy">я даю своё согласие на обработку моих персональных данных, на условиях и для целей, определённых <a class="privacy_policy" href="privacy-policy.html">политикой конфиденциальности</a></label><br> -->
+                    <label class="privacy_policy">Нажимая кнопку «Отправить», я даю своё согласие на обработку моих персональных данных, на условиях и для целей, определённых <a class="privacy_policy" href="privacy-policy.html">политикой конфиденциальности</a></label><br>
                     <input type="submit" value="Отправить">
                 </form>
             </main>
-<!--             <hr class="footer_divider">
-            <footer class="flex footer_flex">
-                <span class="footer_text copyright">Copyright 3Light 2023</span>
-                <a href="privacy-policy.html" class="footer_text" id="policy">Политика конфиденциальности</a>
-            </footer> -->
+            <div class="footer">
+                <hr class="footer_divider">
+                <footer class="flex footer_flex">
+                    <span class="footer_text copyright">Copyright 3Light 2023</span>
+                    <a href="privacy-policy.html" class="footer_text" id="policy">Политика конфиденциальности</a>
+                </footer>
+            </div>
         </div>
     <script src="js/main.js"></script>
     </body>

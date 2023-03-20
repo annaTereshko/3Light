@@ -135,7 +135,7 @@
         margin-bottom: auto;
     }
 
-    .hide_on_desktop{
+    .hide_on_desktop, #checkbox, .navigation__button{
         display:none;
     }
     .column{
