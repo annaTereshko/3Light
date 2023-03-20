@@ -440,7 +440,7 @@ img {
       text-align: right;
     }
 
-    main{
+    main, footer{
       margin:0 5rem;
   
     }
