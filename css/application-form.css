@@ -4,7 +4,9 @@
 main{
     margin-top:11rem
 }
-
+.main-container{
+     height: 100vh;
+}
 .form_text{
     font-size:1.8rem;
     font-style: italic;
@@ -84,7 +86,7 @@ label.privacy_policy{
     }
     body{
         background-image: url(../img/background_desktop.png);
-        width:100%;
+        height:100%;
         background-size:cover;
         background-position: left bottom;
 
@@ -96,9 +98,12 @@ label.privacy_policy{
     }
 
     .footer{
+        position: absolute;
         clear: both;
         width:67%;
-        float: right;
+        /* float: right; */
+        right:0;
+        bottom:0;
 
     }
 
