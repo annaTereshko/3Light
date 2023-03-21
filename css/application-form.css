@@ -4,9 +4,7 @@
 main{
     margin-top:11rem
 }
-.main-container{
-    height: 100vh;
-}
+
 .form_text{
     font-size:1.8rem;
     font-style: italic;
@@ -78,15 +76,10 @@ label.privacy_policy{
         background: none;
     }
 
-    .footer_divider{
-        width:67%;
-        text-align:right;
-    }
-
      .form_container{
-        position: absolute;
+        position: relative;
         width: 40%;
-        right:0;
+        float: right;
         margin-right:10rem;
     }
     body{
@@ -98,24 +91,15 @@ label.privacy_policy{
     }
     .main-container{
         position: relative;
-/*         background-image: url(../img/background_desktop.png);
-        width:100%;
-        background-size: cover;
-        background-position: left bottom; */
         z-index: 0;
 
     }
 
     .footer{
-        position: absolute;
-        bottom:0;
-        width:100%;
-    }
-    .footer_divider{
-        float:right;
-    }
-    footer{
-        clear:right;
+        clear: both;
+        width:67%;
+        float: right;
+
     }
 
     label, .privacy_policy{
