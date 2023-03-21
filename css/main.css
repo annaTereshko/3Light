@@ -75,8 +75,9 @@ img {
   }
 
   .logo_menu{
-    margin-top:-1rem;
-    margin-left:-.6rem;
+    margin-top:1.2rem;
+    margin-left:1.5rem;
+    height:4.5rem;
   }
 
   .container__logo_menu:hover .logo_menu{
@@ -266,6 +267,7 @@ img {
   list-style-type:none;
   width:100%;
   height:100vh;
+  /* height: calc(100vh - 132px); */
   margin-top:6.6rem;
   padding-left:0rem;
   padding-top:3rem;
@@ -355,7 +357,7 @@ img {
     display: inline-block;
     position: relative;
     height:1.6rem;
-    margin-bottom:.45rem;
+    bottom:.45rem;
     opacity: 40%;
     color:rgba(225, 225, 225, .8);
   }
@@ -450,6 +452,10 @@ img {
       font-size: 2.8rem;
 
     }
+    .product__title{
+      font-size: 2rem;
+      bottom:1.5rem;
+    }
 
     .product__img{
       height:20vw;
@@ -460,9 +466,11 @@ img {
     }
 
     .navigation_desktop{ 
-      display:block;
+      display:inline-block;
       width:83%;
       float: right;
+      padding-top:2.5rem;
+      box-sizing: border-box;
     }
 
     #navigation_desktop{
