@@ -1,8 +1,8 @@
 .header{
     height:0; 
 }
-main{
-    margin-top:11rem
+.form_container{
+    margin-top:30%;
 }
 .main-container{
      height: 100vh;
@@ -83,6 +83,7 @@ label.privacy_policy{
         width: 40%;
         float: right;
         margin-right:10rem;
+        margin-top:5%;
     }
     body{
         background-image: url(../img/background_desktop.png);
