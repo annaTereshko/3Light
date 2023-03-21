@@ -105,6 +105,9 @@
     .img_slider{
         margin-top:0;
     }
+    .slider{
+        height:100vh;
+    }
 
     .image{
         padding:.3rem .3rem;
