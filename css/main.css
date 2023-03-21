@@ -357,7 +357,7 @@ img {
     display: inline-block;
     position: relative;
     height:1.6rem;
-    bottom:.45rem;
+    margin-bottom:.45rem;
     opacity: 40%;
     color:rgba(225, 225, 225, .8);
   }
@@ -454,7 +454,7 @@ img {
     }
     .product__title{
       font-size: 2rem;
-      bottom:1.5rem;
+      margin-bottom:2.5rem;
     }
 
     .product__img{
