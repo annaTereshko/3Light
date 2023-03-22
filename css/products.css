@@ -23,7 +23,7 @@
 }
 
 .smallImage_mobile{
-    width:47.5%;
+    width:100%;
 }
 
 .bigImage_mobile{
@@ -37,6 +37,10 @@
     top:50%;
     transform: translateY(-50%);
     width:100%;
+}
+.product_wrapper{
+    width:47.5%;
+ 
 }
 
 .slider_title{
@@ -100,6 +104,9 @@
       display: none;
   }
 
+/* body:not(main .flex-desktop .hide_on_desktop:first-of-type #bigger){
+    filter:blur(3rem);
+} */
   @media only screen and (min-width:600px){
 
     .img_slider{
