@@ -1,63 +1,86 @@
-.header{
-    height:0; 
+.header {
+  height: 0;
 }
 
-.form_container{
-    margin-top:30%;
+.form_container {
+  margin-top: calc(6.6rem + 5rem);
+  min-height:calc(100vh - 13.2rem);
 }
-.main-container{
-     height: 100vh;
-}
-.form_text{
-    font-size:1.8rem;
-    font-style: italic;
+.form_text {
+  font-size: 1.8rem;
+  font-style: italic;
 }
 
-label{
-    font-size:1.6rem;
-    font-style: italic;
+label {
+  font-size: 1.6rem;
+  font-style: italic;
 }
-input[type=text], textarea {
+input[type="text"],
+textarea {
   width: 100%;
   padding: 5px;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 3px;
   resize: vertical;
-  background: rgba(102,102,102,.3);
-  border:none;
-  outline:none;
-  color:white;
+  background: rgba(102, 102, 102, 0.3);
+  border: none;
+  outline: none;
+  color: white;
 }
-textarea{
-    height:10rem;
-    resize: none;
+textarea {
+  height: 10rem;
+  resize: none;
 }
 
-input[type=submit] {
+input[type="submit"] {
   background-color: transparent;
   padding: 5px 10px;
-  border: 2px solid rgba(255,255,255,.8);
+  border: 2px solid rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   cursor: pointer;
-  font-size:2rem;
-  color:rgba(255,255,255,.8);
-  margin-top:2.5rem;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 2.5rem;
 }
 
-input[type=submit]:hover {
-    color: white;
-    border-color: white;
+input[type="submit"]:hover {
+  color: white;
+  border-color: white;
 }
-.privacy_policy{
-    color:rgba(225, 225, 225, .5);
-    font-size: 1.5rem;
-    font-style: normal;
-    margin-top: 1.7rem;
+.privacy_policy {
+  color: rgba(225, 225, 225, 0.5);
+  font-size: 1.5rem;
+  font-style: normal;
+  margin-top: 1.7rem;
 }
-label.privacy_policy{
-    display: inline-block;
+label.privacy_policy {
+  display: inline-block;
 }
+
+.footer {
+  position: relative;
+  clear: both;
+  width: 100%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: rgba(102, 102, 102, 0.3);
+  transition: background-color 5000s ease-in-out 0s;
+}
+input[data-autocompleted] {
+  background: rgba(102, 102, 102, 0.3) !important;
+}
+
 /* #privacy_policy{
     accent-color: rgba(102,102,102,.3);
     border-color:rgba(102,102,102,.3);
@@ -73,51 +96,58 @@ label.privacy_policy{
     margin-left:1rem;
 } */
 
-@media only screen and (min-width:600px){
+@media only screen and (min-width: 600px) {
+  .header {
+    background: none;
+  }
 
-    .header{
-        background: none;
-    }
+  .form_container {
+    position: relative;
+    min-height:calc(100vh - 22.7rem);
+    width: 50%;
+    float: right;
+    margin-right: 10rem;
+    margin-top: calc(6.6rem + 2.5rem);
+    /*     height: 75vh;
+    overflow-y: scroll; */
+  }
+  body {
+    background-image: url(../img/background_desktop.png);
+    height: 100%;
+    background-size: cover;
+    background-position: left bottom;
+    background-attachment: scroll;
+  }
+  .main-container {
+    position: relative;
+    z-index: 0;
+  }
 
-     .form_container{
-        position: relative;
-        width: 40%;
-        float: right;
-        margin-right:10rem;
-        margin-top:5%;
-    }
-    body{
-        background-image: url(../img/background_desktop.png);
-        height:100%;
-        background-size:cover;
-        background-position: left bottom;
+  .footer {
+    width: 67%;
+    float: right;
 
-    }
-    .main-container{
-        position: relative;
-        z-index: 0;
+  }
 
-    }
+  label {
+    font-size: 1.6rem;
+  }
 
-    .footer{
-        position: absolute;
-        clear: both;
-        width:67%;
-        /* float: right; */
-        right:0;
-        bottom:0;
+  input[type="text"] {
+    font-size: 1rem;
+  }
+  textarea {
+    height: 15vh;
+  }
 
-    }
+  .privacy_policy {
+    font-size: 1.4rem;
+  }
+  .form_text {
+    font-size: 1.8rem;
+  }
 
-    label, .privacy_policy{
-        font-size:2rem;
-    }
-    .form_text{
-        font-size: 2.2rem;
-    }
-
-    input[type=submit] {
-        margin-top:2.6rem;
-    }
-
+  input[type="submit"] {
+    margin-top: 2.6rem;
+  }
 }

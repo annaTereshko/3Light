@@ -5,6 +5,7 @@ function changeZIndex(){
     let productTitle = document.getElementsByClassName("product__title");
     let navigation = document.getElementById("navigation");
     let policyLink = document.getElementById("policy");
+    let arrows = document.getElementById("arrows");
 
     if(document.getElementById("checkbox").checked){
         for(i=0; i < products.length; i++){
@@ -13,6 +14,7 @@ function changeZIndex(){
         }
         navigation.style.transform = "none";
         policyLink.style.zIndex = "-1";
+        arrows.style.zIndex = "-1";
 
     }else{
         for(i=0; i < products.length; i++){
@@ -21,6 +23,7 @@ function changeZIndex(){
         }
         navigation.style.transform = "translate(-150%, 0%)";
         policyLink.style.zIndex = "0";
+        arrows.style.removeProperty('z-index');
     }
 }
 
