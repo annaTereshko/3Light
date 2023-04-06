@@ -2,7 +2,7 @@
   height: 0;
 }
 
-.form_container {
+#content_container {
   margin-top: calc(6.6rem + 5rem);
   min-height:calc(100vh - 13.2rem);
 }
@@ -101,7 +101,7 @@ label.privacy_policy{
     background: none;
   }
 
-  .form_container {
+  #content_container {
     position: relative;
     min-height:calc(100vh - 22.7rem);
     width: 50%;

@@ -48,6 +48,10 @@ main {
   width: 100%;
 }
 
+.arrows{
+  height:6rem;
+}
+
 .product_wrapper {
   width: 47.5%;
 }
@@ -59,7 +63,7 @@ main {
   font-size: 2rem;
   font-family: casualcontactmf;
   height: 4.6rem;
-  background: linear-gradient(to right, transparent 60%, black);
+  background: linear-gradient(to right, transparent 60%, rgba(0,0,0,.9));
   bottom: 4.5rem;
   padding-right: 1.8rem;
   padding-top: 1rem;
@@ -120,13 +124,20 @@ main {
 /* body:not(main .flex-desktop .hide_on_desktop:first-of-type #bigger){
     filter:blur(3rem);
 } */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1280px) {
   .img_slider {
     margin-top: 0;
   }
   .slider {
     height: 100vh;
     width: auto;
+  }
+
+  .slider_title {
+    height: 6rem;
+    bottom: 6rem;
+    font-size: 2.2rem;
+    padding-top: 1.8rem;
   }
 
   .test {
@@ -156,7 +167,7 @@ main {
   }
 
   .flex-width_right {
-    width: 49vw;
+    width: 46vw;
   }
   .flex-width_left {
     width: 40vw;
@@ -168,7 +179,7 @@ main {
   }
   
   .small {
-    width: 38%;
+    width: 36%;
     margin: 1rem 4rem 0 0;
     margin-bottom: auto;
   }
@@ -185,7 +196,7 @@ main {
   }
 
   .table-line p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   .title {
     font-size: 2.4rem;
