@@ -27,7 +27,7 @@ main {
 }
 
 .image {
-  padding: 1.5rem 1.5rem;
+  padding: .1rem .1rem;
   border: 0.2rem solid rgba(127, 127, 137, 0.5);
   box-sizing: border-box;
 }
@@ -80,11 +80,16 @@ main {
 }
 
 .table-line p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-style: italic;
   margin: 0;
   white-space: nowrap;
 }
+
+.table-line p:last-of-type {
+  font-weight:bold;
+}
+
 .table-line:nth-of-type(even) {
   background-color: rgba(102, 102, 102, 0.3);
 }
@@ -196,7 +201,7 @@ main {
   }
 
   .table-line p {
-    font-size: 1.8rem;
+    font-size: 1.3vw;
   }
   .title {
     font-size: 2.4rem;
