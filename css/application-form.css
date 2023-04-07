@@ -96,7 +96,7 @@ label.privacy_policy{
     margin-left:1rem;
 } */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1280px) {
   .header {
     background: none;
   }

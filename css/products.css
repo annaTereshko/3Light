@@ -49,7 +49,7 @@ main {
 }
 
 .arrows{
-  height:6rem;
+  height:8vh;
 }
 
 .product_wrapper {
@@ -200,5 +200,9 @@ main {
   }
   .title {
     font-size: 2.4rem;
+  }
+
+  .arrows{
+    height:12vh;
   }
 }
