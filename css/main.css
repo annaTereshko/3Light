@@ -49,7 +49,7 @@ img {
 .main-container {
   animation: gradient 2.8s ease-in;
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100vh - 6.6rem);
   /* box-shadow:rgba(0, 0, 0, 0.4) 1rem 1rem .5rem;  
     box-shadow:rgba(0, 0, 0, 0.8) 1rem 1rem 4.5rem;*/
 }
@@ -431,6 +431,10 @@ footer {
   .container__logo_main {
     top: 30%;
     text-align: right;
+  }
+
+  .main-container {
+    min-height: 100vh;
   }
 
   main,
