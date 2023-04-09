@@ -6,7 +6,8 @@ function changeZIndex(){
     let navigation = document.getElementById("navigation");
     let policyLink = document.getElementById("policy");
     let arrows = document.getElementById("arrows");
-    //let contentContainer = document.getElementById("content_container")
+    //let contentContainer = document.getElementById("content_container");
+    let zIndexChange = document.getElementById("zIndexChange");
 
     if(document.getElementById("checkbox").checked){
         for(i=0; i < products.length; i++){
@@ -15,8 +16,12 @@ function changeZIndex(){
         }
         navigation.style.transform = "none";
         policyLink.style.zIndex = "-1";
-        arrows.style.zIndex = "-1";
-        contentContainer.style.zIndex = "-1";
+        if(arrows){
+            arrows.style.zIndex = "-1";
+        }
+        if(zIndexChange){
+            zIndexChange.style.zIndex = "-1";
+        }
 
     }else{
         for(i=0; i < products.length; i++){
@@ -25,8 +30,14 @@ function changeZIndex(){
         }
         navigation.style.transform = "translate(-150%, 0%)";
         policyLink.style.zIndex = "0";
-        arrows.style.removeProperty('z-index');
-        //contentContainer.style.removeProperty('z-index');
+        if(arrows){
+            arrows.style.removeProperty('z-index');
+        }
+        if(zIndexChange){
+            zIndexChange.style.removeProperty('z-index');
+        }
+      
+        
     }
 }
 
