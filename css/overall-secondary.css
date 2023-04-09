@@ -1,0 +1,88 @@
+.header {
+    height: 0;
+  }
+
+/* Firefox */
+
+* {
+  scrollbar-width: .8rem;
+  scrollbar-color: rgba(102, 102, 102, 0.3) transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: .8rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(102, 102, 102, 0.3);
+  border-radius: .6rem;
+  border: .3rem solid transparent;
+}
+  
+  #content_container {
+    margin-top:11.2rem;
+    min-height:calc(100vh - 13.2rem);
+  }
+  
+  .footer {
+    position: relative;
+    clear: both;
+    width: 100%;
+  }
+  
+  .footer_divider {
+    margin-top: 4rem;
+  }
+  
+  @media only screen and (min-width: 1280px) {
+
+    .header {
+      background: none;
+    }
+  
+    #content_container {
+      position: relative;
+      min-height:calc(100vh - 22.7rem);
+      width: 50%;
+      float: right;
+      margin-right: 10rem;
+      margin-top: calc(6.6rem + 2.5rem);
+      /*     height: 75vh;
+      overflow-y: scroll; */
+    }
+
+    .text_container{
+      height:45vh;
+      overflow-y: scroll;
+      padding-right:.5rem;
+    }
+
+    body {
+      background-image: url(../img/background_desktop.png);
+      height: 100%;
+      background-size: cover;
+      background-position: left bottom;
+      background-attachment: scroll;
+    }
+
+    .main-container {
+      position: relative;
+      z-index: 0;
+    }
+  
+    .footer {
+      width: 67%;
+      float: right;
+  
+    }
+  
+    .footer_divider {
+      margin-top: 7rem;
+    }
+  }
+  

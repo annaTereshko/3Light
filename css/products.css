@@ -80,7 +80,6 @@ main {
 }
 
 .table-line p {
-  font-size: 1.4rem;
   font-style: italic;
   margin: 0;
   white-space: nowrap;
@@ -200,9 +199,6 @@ main {
     justify-content: space-between;
   }
 
-  .table-line p {
-    font-size: 1.3vw;
-  }
   .title {
     font-size: 2.4rem;
   }

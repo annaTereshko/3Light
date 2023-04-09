@@ -1,23 +1,14 @@
-.header {
-  height: 0;
-}
-
-#content_container {
-  margin-top:11.2rem;
-  min-height:calc(100vh - 20.2rem);
-}
 .form_text {
-  font-size: 1.8rem;
   font-style: italic;
   font-weight:bold;
 }
 
 label {
-  font-size: 1.6rem;
   font-style: italic;
 }
 input[type="text"],
 textarea {
+  font-size:1.2rem;
   width: 100%;
   padding: 5px;
   box-sizing: border-box;
@@ -27,11 +18,19 @@ textarea {
   background: rgba(102, 102, 102, 0.3);
   border: none;
   outline: none;
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: calibri;
 }
 textarea {
   height: 10rem;
   resize: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow: -moz-scrollbars-none;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0 !important
 }
 
 input[type="submit"] {
@@ -51,18 +50,12 @@ input[type="submit"]:hover {
 }
 .privacy_policy {
   color: rgba(225, 225, 225, 0.5);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-style: normal;
   margin-top: 1.7rem;
 }
 label.privacy_policy {
   display: inline-block;
-}
-
-.footer {
-  position: relative;
-  clear: both;
-  width: 100%;
 }
 
 input:-webkit-autofill,
@@ -98,54 +91,17 @@ label.privacy_policy{
 } */
 
 @media only screen and (min-width: 1280px) {
-  .header {
-    background: none;
-  }
-
-  #content_container {
-    position: relative;
-    min-height:calc(100vh - 22.7rem);
-    width: 50%;
-    float: right;
-    margin-right: 10rem;
-    margin-top: calc(6.6rem + 2.5rem);
-    /*     height: 75vh;
-    overflow-y: scroll; */
-  }
-  body {
-    background-image: url(../img/background_desktop.png);
-    height: 100%;
-    background-size: cover;
-    background-position: left bottom;
-    background-attachment: scroll;
-  }
-  .main-container {
-    position: relative;
-    z-index: 0;
-  }
-
-  .footer {
-    width: 67%;
-    float: right;
-
-  }
-
-  label {
-    font-size: 1.3vw;
-  }
 
   input[type="text"] {
-    font-size: 1.2vw;
+    font-size: 1.5rem;
   }
   textarea {
     height: 15vh;
+    font-size: 1.5rem;
   }
 
   .privacy_policy {
-    font-size: 1.2vw;
-  }
-  .form_text {
-    font-size: 1.3vw;
+    font-size: 1.5rem;
   }
 
   input[type="submit"] {

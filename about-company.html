@@ -1,5 +1,3 @@
-<?php include "applicationForm.php"; ?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,13 +6,12 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/overall-secondary.css">
-        <link rel="stylesheet" href="css/application-form.css">
+        <link rel="stylesheet" href="css/about-company.css">
         
         <title>3Light</title>
     </head>
     
     <body>
-        <h1 class="invisible">Форма заявки</h1>
         <div class="nav_contact">
             <div class="nav_contact__left">
                 <div class="nav_contact__left__icon">
@@ -62,24 +59,12 @@
         </div> 
         <div class="main-container">
             <main id="content_container">
-                <p class="form_text">Вы можете отправить запрос по интересующему Вас вопросу</p>
-                <form class="float-right" action="" method="post">
-                    <label for="name">Ваше Имя*</label>
-                    <input type="text" id="name" name="name" required>
-                
-                    <label for="phone">Ваш телефон</label>
-                    <input type="text" id="phone" name="phone">
-                
-                    <label for="email">Ваш e-mail*</label>
-                    <input type="text" id="email" name="email" required>
-                
-                    <label for="message">Ваше сообщение или комментарий*</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <!-- <input type="checkbox" id="privacy_policy" name="privacy_policy" value="Privacy Policy"> -->
-                    <!-- <label for="privacy_policy" class="privacy_policy">я даю своё согласие на обработку моих персональных данных, на условиях и для целей, определённых <a class="privacy_policy" href="privacy-policy.html">политикой конфиденциальности</a></label><br> -->
-                    <label class="privacy_policy">Нажимая кнопку «Отправить», я даю своё согласие на обработку моих персональных данных, на условиях и для целей, определённых <a class="privacy_policy" href="privacy-policy.html">политикой конфиденциальности</a></label><br>
-                    <input type="submit" name = "submit" value="Отправить">
-                </form>
+                <h1>О КОМПАНИИ</h1>
+                <div class = "text_container">
+                    <p>Компания 3Light - российская производственная компания, основанная на базе производственного холдинга CHUGUNY.</p> 
+                    <p>Цель компании - создание светильников уникального дизайна из дерева, которые будут гармонично вписываться в природный ландшафт, украшая и дополняя его как в дневное, так и ночное время. В основе философии производимой компанией продукции - концепция природной эстетики - естественность, простота, функциональность. Использование при производстве благородных пород дерева: дуб, ясень, качественных материалов и комплектующих, позволяет быть уверенными в качестве и надежности производимых нами светильников.</p> 
+                    <p>Линейку светильников 3Light объединяет общее дизайнерское решение, позволяющее комбинировать различные светильники как по функциональным требованиям, так и объемно-декоративным характеристикам. Что позволяет воплощать разнообразные идеи по художественному декорированию природного ландшафта, а также решать комплекс задач по функциональному освещению различных по назначению территорий.</p>
+                </div>             
             </main>
             <div class="footer">
                 <hr class="footer_divider">
