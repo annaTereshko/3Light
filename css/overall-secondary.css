@@ -26,8 +26,7 @@
   
   #content_container {
     margin-top:11.2rem;
-    height:auto;
-    /* min-height:calc(100vh - 13.2rem); */
+    min-height:calc(100vh - 13.2rem);
   }
   
   .footer {
