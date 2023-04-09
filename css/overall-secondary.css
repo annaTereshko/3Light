@@ -48,18 +48,22 @@
     #content_container {
       position: relative;
       min-height:calc(100vh - 22.7rem);
-      width: 50%;
+      width: 45%;
       float: right;
-      margin-right: 10rem;
-      margin-top: calc(6.6rem + 2.5rem);
+      margin-right: 8rem;
+      margin-top: 9.1rem;
       /*     height: 75vh;
       overflow-y: scroll; */
     }
 
     .text_container{
-      height:45vh;
+      height:50vh;
       overflow-y: scroll;
       padding-right:.5rem;
+    }
+
+    .text_container p:first-of-type{
+      margin-top:0;
     }
 
     body {
