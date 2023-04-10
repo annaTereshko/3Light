@@ -1,4 +1,4 @@
-<?php include "php/applicationForm.php"; ?>
+<?php  require_once("php/applicationForm.php"); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -65,16 +65,17 @@
                 <p class="form_text">Вы можете отправить запрос по интересующему Вас вопросу</p>
                 <form class="float-right" action="" method="post">
                     <label for="name">Ваше Имя*</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" value = "<?php echo $name ?>" required>
                 
                     <label for="phone">Ваш телефон</label>
-                    <input type="text" id="phone" name="phone">
-                
+                    <input type="text" id="phone" name="phone" value = "<?php echo $phone ?>">
+
                     <label for="email">Ваш e-mail*</label>
-                    <input type="text" id="email" name="email" required>
+                    <input type="text" id="email" name="email" value = "<?php echo  $from  ?>" required>
+                    <?php echo $FrontendMessage ?>
                 
                     <label for="message">Ваше сообщение или комментарий*</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <textarea id="message" name="message" required><?php echo $message ?></textarea>
                     <!-- <input type="checkbox" id="privacy_policy" name="privacy_policy" value="Privacy Policy"> -->
                     <!-- <label for="privacy_policy" class="privacy_policy">я даю своё согласие на обработку моих персональных данных, на условиях и для целей, определённых <a class="privacy_policy" href="privacy-policy.html">политикой конфиденциальности</a></label><br> -->
                     <label class="privacy_policy">Нажимая кнопку «Отправить», я даю своё согласие на обработку моих персональных данных, на условиях и для целей, определённых <a class="privacy_policy" href="privacy-policy.html">политикой конфиденциальности</a></label><br>
@@ -89,16 +90,7 @@
                 </footer>
             </div>
         </div>
-<!--         <div id="popup" class="overlay">
-            <div class="popup">
-                <h2>Отправка сообщения</h2>
-                <a class="close" href="#popup">&times;</a>
-                <div class="content">
-                    Ваше сообшение отправлено, спасибо! Мы свяжемся с вами в ближайшее время.
-                </div>
-            </div>
-        </div> -->
     <script src="js/main.js"></script>
-    <script src="applicationForm.php"></script>
+    <script src="js/sendForm.js"></script>
     </body>
 </html>

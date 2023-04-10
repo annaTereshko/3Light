@@ -437,6 +437,48 @@ footer {
   display: none;
 }
 
+@media only screen and (min-width: 750px) {
+
+  .nav_contact {
+    display: none;
+  }
+
+  #checkbox,
+  .navigation__button,
+  #navigation {
+    display: none;
+  }
+
+  .navigation_desktop {
+    display: inline-block;
+    width: 83%;
+    float: right;
+    padding-top: 2.5rem;
+    box-sizing: border-box;
+  }
+
+  #navigation_desktop {
+    position: relative;
+    display: flex;
+    padding: 0;
+  }
+
+  .navigation > ul {
+    margin-top: -0.6rem;
+    background: none;
+    transform: none;
+    backdrop-filter: none;
+    justify-content: flex-end;
+    height: 0;
+    left: 0;
+  }
+
+  .navigation li {
+    padding-right: 3rem;
+  }
+
+}
+
 @media only screen and (min-width: 1280px) {
 
   body{
@@ -475,10 +517,6 @@ footer {
       z-index: 0;
 
   } */
-
-  .nav_contact {
-    display: none;
-  }
 
   .logo_menu {
     height: 5rem;
@@ -528,40 +566,6 @@ footer {
 
   .product__img {
     height: 18vw;
-  }
-
-  #checkbox,
-  .navigation__button,
-  #navigation {
-    display: none;
-  }
-
-  .navigation_desktop {
-    display: inline-block;
-    width: 83%;
-    float: right;
-    padding-top: 2.5rem;
-    box-sizing: border-box;
-  }
-
-  #navigation_desktop {
-    position: relative;
-    display: flex;
-    padding: 0;
-  }
-
-  .navigation > ul {
-    margin-top: -0.6rem;
-    background: none;
-    transform: none;
-    backdrop-filter: none;
-    justify-content: flex-end;
-    height: 0;
-    left: 0;
-  }
-
-  .navigation li {
-    padding-right: 3rem;
   }
 
   .product_placeholder {

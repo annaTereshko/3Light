@@ -1,3 +1,4 @@
+
 .form_text {
   font-style: italic;
   font-weight:bold;
@@ -90,6 +91,60 @@ label.privacy_policy{
     margin-left:1rem;
 } */
 
+.overlay {
+  position: fixed;
+  top: 6.6rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  opacity: 1;
+	z-index:10;
+}
+
+.popup {
+  margin: 0 auto;
+  margin-top:30vh;
+  padding: 20px;
+  background: rgba(49, 56, 84,.8);
+  width: 50%;
+  position: relative;
+  /* transition: all 5s ease-in-out; */
+	transition: opacity 500ms;
+ 
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+.popup .close {
+  position: absolute;
+  top: 0px;
+  right:12px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+.popup .close:hover {
+  color: white;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  color: rgba(255, 255, 255, 0.8)
+}
+
+.error{
+  color:red;
+  margin:.5rem 0 .5rem 0;
+	font-size:1.3rem;
+}
+
 @media only screen and (min-width: 1280px) {
 
   input[type="text"] {
@@ -106,5 +161,12 @@ label.privacy_policy{
 
   input[type="submit"] {
     margin-top: 2.6rem;
+  }
+
+  .overlay {
+    top: 0;
+  }
+  .popup{
+    width: 30%;
   }
 }
