@@ -97,7 +97,7 @@ img {
     box-shadow:rgba(0, 0, 0, 0.8) 1rem 1rem 4.5rem;*/
 }
 
-main {
+main, footer {
   /* margin: 0 1.8rem; */
   margin: 0 5vw;
 }
@@ -411,7 +411,6 @@ main {
 
 footer {
   height: 6.6rem;
-  margin: 0 1.8rem;
 }
 
 .footer_flex {
