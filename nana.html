@@ -24,8 +24,8 @@
                 </div>
             </div>
             <div class="nav_contact__right">
-                <a href=""><img src="img/logo-vk.png" alt="Vk" class="vk"></a>
-                <a href=""><img src="img/logo-telegram.png" alt="Telegram" class="telegram"></a>                    
+                <a href=""><img src="img/logo-vk.png" alt="Вконтакте" class="vk"></a>
+                <a href=""><img src="img/logo-telegram.png" alt="Телеграм" class="telegram"></a>                    
             </div>
         </div>
         <div class="main-container">
@@ -59,15 +59,10 @@
                     </nav>
                 </div>
                 <div id = "arrows" class="img_slider">
-                    <div class = "test"></div>          
-<!--                     <img class="slider"
-                    srcset="img/nana-slider-mobile.png 200w, img/nana-slider-desktop.png 4010w"
-                    sizes="(max-width: 600px) 200px, 4010px"
-                    src="img/nana-slider-desktop.png"
-                    alt="" /> -->
+                    <div class = "slider_img"></div>          
                     <div class="flex arrow">
-                        <a href=""><img class = "arrows"src="img/arrow-left.png" alt=""></a>
-                        <a href=""><img class = "arrows" src="img/arrow-right.png" alt=""></a>
+                        <a class="arrow_hover" href=""><img class = "arrows" src="img/arrow-left.png" alt="Стрелка влево"></a>
+                        <a class="arrow_hover" href=""><img class = "arrows" src="img/arrow-right.png" alt="Стрелка вправо"></a>
                     </div>  
                     <div class="collapse"><span class="slider_title">HAHA</span></div>
                 </div>
@@ -75,11 +70,24 @@
             <main>
                 <div class="flex flex-desktop">
                     <div class="flex hide_on_desktop">
-                        <div id="bigger" class="product_wrapper"><img src="img/nana_products.png" alt=""  class="image smallImage_mobile"></div>
-                        <div class="product_wrapper"><img src="img/nana_model_mobile.png" alt="" class="image smallImage_mobile"></div>
+                        <div id="bigger" class="product_wrapper">
+                            <picture>
+                                <source srcset="img/nana_products_mobile.png" media="(max-width: 1279px)" />
+                                <img class="image smallImage_mobile" src="" alt = "НАНА"/>
+                            </picture>
+                        </div>
+                        <div class="product_wrapper">
+                            <picture>
+                                <source srcset="img/nana_model_mobile.png" media="(max-width: 1279px)" />
+                                <img class="image smallImage_mobile" src="" alt = "НАНА чертёж"/>
+                            </picture>
+                        </div>
                     </div>
                      <div class="flex-width_left hide_on_mobile">
-                        <img src="img/nana_products_desktop.png" alt="" class="image diagram">
+                        <picture>
+                            <source srcset="img/nana_products_desktop.png" media="(min-width: 1280px)" />
+                            <img class="image diagram" src="" alt = "НАНА"/>
+                        </picture>
                     </div>
                     <div class="flex-width_right column">
                         <div class = "table_content">
@@ -139,10 +147,19 @@
                         </div>
                         <div class="title hide_on_desktop"><h2>ДИАГРАММА ОСВЕЩЕННОСТИ</h2></div>
                         <div class="flex hide_on_mobile">
-                            <img src="img/nana_model.png" alt="" class="image small">
-                            <img class="image small" src="img/nana_diagram.png" alt="">
+                            <picture>
+                                <source srcset="img/nana_model_desktop.png" media="(min-width: 1280px)" />
+                                <img class="image small" src="" alt = "НАНА чертёж"/>
+                            </picture>
+                            <picture>
+                                <source srcset="img/nana_diagram_desktop.png" media="(min-width: 1280px)" />
+                                <img class="image small" src="" alt = "НАНА диаграма"/>
+                            </picture>
                         </div>
-                        <img class="image bigImage_mobile hide_on_desktop" src="img/nana_diagram.png" alt="">
+                        <picture class="hide_on_desktop">
+                            <source srcset="img/nana_diagram_mobile.png" media="(max-width: 1279px)" />
+                            <img class="image bigImage_mobile" src=""  alt = "НАНА диаграма"/>
+                        </picture>
                     </div>
                 </div>
             </main>
