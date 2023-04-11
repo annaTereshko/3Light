@@ -12,7 +12,7 @@
   background-image: url(../img/nana-slider-mobile.png);
   width: 100%;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
 }
 
 .slider {
@@ -50,7 +50,7 @@ main {
 
 .arrows{
   height:6vh;
-  opacity:60%;
+  opacity:30%;
 }
 
 .arrow_hover:hover .arrows {
@@ -135,7 +135,7 @@ main {
     filter:blur(3rem);
 } */
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1000px) {
   .img_slider {
     margin-top: 0;
   }
@@ -152,12 +152,13 @@ main {
   }
 	
 	 .table-line p {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 
   .slider_img {
     height: 100vh;
     background-image: url(../img/nana-slider-desktop.png);
+    background-position: center;
   }
 
   .image {

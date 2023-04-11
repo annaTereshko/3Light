@@ -482,7 +482,7 @@ footer {
 @media only screen and (min-width: 1280px) {
 
   body{
-    font-size:1.7rem;
+    font-size:1.8em;
   }
 
   h1{
@@ -494,7 +494,7 @@ footer {
   }
 
   h3{
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
   .header {
     position: relative;
