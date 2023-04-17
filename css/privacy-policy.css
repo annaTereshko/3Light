@@ -1,0 +1,10 @@
+.navigation > ul {
+    height: calc(100vh - 9.6rem);
+  }
+
+  @media only screen and (min-width: 1000px) {
+
+    .navigation > ul {
+      height: 0;
+    }
+  }
