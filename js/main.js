@@ -6,7 +6,6 @@ function changeZIndex(){
     let navigation = document.getElementById("navigation");
     let policyLink = document.getElementById("policy");
     let arrows = document.getElementById("arrows");
-    //let contentContainer = document.getElementById("content_container");
     let zIndexChange = document.getElementById("zIndexChange");
 
     if(document.getElementById("checkbox").checked){
@@ -14,7 +13,6 @@ function changeZIndex(){
             products[i].style.zIndex = "-1";
             productTitle[i].style.zIndex = "-1";
         }
-        navigation.style.transform = "none";
         policyLink.style.zIndex = "-1";
         if(arrows){
             arrows.style.zIndex = "-1";
@@ -22,13 +20,13 @@ function changeZIndex(){
         if(zIndexChange){
             zIndexChange.style.zIndex = "-1";
         }
+        navigation.style.transform = "none";
 
     }else{
         for(i=0; i < products.length; i++){
             products[i].style.zIndex = "0";
             productTitle[i].style.zIndex = "0";
         }
-        navigation.style.transform = "translate(-150%, 0%)";
         policyLink.style.zIndex = "0";
         if(arrows){
             arrows.style.removeProperty('z-index');
@@ -36,8 +34,7 @@ function changeZIndex(){
         if(zIndexChange){
             zIndexChange.style.removeProperty('z-index');
         }
-      
-        
+        navigation.style.transform = "translate(-150%, 0%)";   
     }
 }
 
@@ -64,4 +61,4 @@ function zoomPicture(){
 }
 
 document.querySelector('#checkbox').addEventListener('click', changeZIndex);
-document.querySelector('#bigger').addEventListener('click', zoomPicture);
+// document.querySelector('#bigger').addEventListener('click', zoomPicture);
