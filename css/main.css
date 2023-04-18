@@ -150,7 +150,7 @@ main, footer {
   width:100vw;
   max-width:40rem;
   z-index: -1;
-  top:50%;
+  top:52%;
   transform: translateY(-50%);
   animation: logo 2.8s;
 /*   filter: drop-shadow(0 0 3rem rgb(201, 205, 255))
@@ -475,6 +475,10 @@ footer {
   .navigation li {
     padding-right: 3rem;
   }
+  
+ .header{
+    height:100vh;
+ }
 
 }
 
