@@ -144,16 +144,22 @@ main {
     background-position: bottom;
   }
 
-}
-
-@media only screen and (min-width: 1000px) {
-  .img_slider {
-    margin-top: 0;
+  .slider_img_mobile {
+    display: none;
   }
+
   .slider {
     height: 100vh;
     width: auto;
   }
+
+  .img_slider {
+    margin-top: 0;
+  }
+
+}
+
+@media only screen and (min-width: 1000px) {
 
   .slider_title {
     height: 6rem;
