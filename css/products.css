@@ -139,9 +139,67 @@ main {
 
   .slider_img {
     height: 100vh;
-    background-image: url(../img/nana-slider-desktop.png);
     background-size: cover;
     background-position: bottom;
+  }
+
+  .background_nana{
+    background-image: url(../img/nana-slider-desktop.png);
+
+  }
+
+  .background_nana-deko{
+    background-image: url(../img/nana-deko-slider-desktop.png);
+
+  }
+
+  .background_areka{
+    background-image: url(../img/areka-slider-desktop.png);   
+  }
+
+  .background_areka-deko{
+    background-image: url(../img/areka-deko-slider-desktop.png);   
+
+  }
+
+  .background_lantana{
+    background-image: url(../img/lantana-slider-desktop.png);   
+  }
+
+  .background_molis{
+    background-image: url(../img/molis-slider-desktop.png);   
+  }
+
+  .background_yukka{
+    background-image: url(../img/yukka-slider-desktop.png);   
+  }
+
+  .background_danika{
+    background-image: url(../img/danika-slider-desktop.png);   
+  }
+
+  .background_tristis{
+    background-image: url(../img/tristis-slider-desktop.png);   
+  }
+
+  .background_tristis-deko{
+    background-image: url(../img/tristis-deko-slider-desktop.png);   
+  }
+
+  .background_pavia{
+    background-image: url(../img/pavia-slider-desktop.png);   
+  }
+
+  .background_pavia-deko{
+    background-image: url(../img/pavia-deko-slider-desktop.png);   
+  }
+
+  .background_kobeya{
+    background-image: url(../img/kobeya-slider-desktop.png);   
+  }
+
+  .background_omela{
+    background-image: url(../img/omela-slider-desktop.png);   
   }
 
   .slider_img_mobile {
@@ -228,5 +286,16 @@ main {
 
   .arrows{
     height:9vh;
+  }
+
+   .arrow_flex{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+  }
+
+  .arrow_up{
+    height:6vh;
+    margin-bottom: -2rem;
   }
 }
