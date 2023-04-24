@@ -50,8 +50,11 @@ main {
 
 .arrows{
   height:6vh;
-  opacity:20%;
+  opacity:30%; 
+  margin: 0 0.5rem 0 0.5rem;
 }
+
+
 
 .arrow_hover:hover .arrows {
   opacity:100%;
@@ -286,6 +289,7 @@ main {
 
   .arrows{
     height:9vh;
+    opacity:20%;
   }
 
    .arrow_flex{

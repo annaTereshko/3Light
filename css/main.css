@@ -69,12 +69,12 @@ html {
 }
 
 h1 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: normal;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: normal;
 }
 
@@ -390,7 +390,7 @@ main, footer {
 
 .product__title {
   font-family: casualcontactmf;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   display: inline-block;
   position: relative;
   height: 1.6rem;
@@ -530,11 +530,9 @@ footer {
   }
 
   .logo_main {
-    /* width: 30vw; */ 
-    width:45vw;
+    width:41vw;
     max-width:none;
-    /* margin-right: 20%; */
-    margin-right: 12%;
+    margin-right: 13%;
 
     }
 
