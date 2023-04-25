@@ -38,6 +38,10 @@ function changeZIndex(){
     }
 }
 
+function changeTransform() {
+    location.reload();
+}
+
 function zoomPicture(){
     let zoom =  document.getElementById("bigger");
     let wrapper =  document.getElementById("wrapper");
@@ -61,4 +65,5 @@ function zoomPicture(){
 }
 
 document.querySelector('#checkbox').addEventListener('click', changeZIndex);
+document.querySelector('#anchor_index').addEventListener('click', changeTransform);
 // document.querySelector('#bigger').addEventListener('click', zoomPicture);
