@@ -234,6 +234,7 @@ main, footer {
   height: calc(100vh - 6.6rem);
   position: sticky;
   top: 0;
+  /* z-index: -1;  Navigation without JS, try later*/
 }
 
 .navigation a {
@@ -329,11 +330,16 @@ main, footer {
   padding-right: 2rem;
 }
 
-/* .nav_menu:has(input:checked) ~ .header > .navigation > ul{
-
+/* Navigation withou JS try later
+.nav_menu:has(input:checked) ~ .header > .navigation > ul{
   transform:none; 
 
-}*/
+}
+
+.nav_menu:has(input:checked) ~ .header {
+  z-index: 1;
+
+} */
 
 .flex {
   display: flex;
