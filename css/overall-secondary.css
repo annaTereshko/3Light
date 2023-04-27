@@ -24,18 +24,17 @@
   border: .3rem solid transparent;
 }
 
-.navigation > ul {
+/* .navigation > ul {
   height: calc(100vh - 15rem);
 }
 .main-container {
   min-height: calc(100vh - 20rem);
-}
+} */
   
   #content_container {
     margin-top:11.2rem;
-    min-height: calc(100vh - 27rem);
-    /* min-height:calc(100vh - 13.2rem); */
-    /* z-index:0; */
+    /* min-height: calc(100vh - 27rem); */
+    min-height:calc(100vh - 13.2rem);
   }
   
   .footer {

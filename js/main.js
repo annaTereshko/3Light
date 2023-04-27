@@ -40,6 +40,7 @@ function changeZIndex(){
 
 function changeTransform() {
     location.reload();
+
 }
 
 function zoomPicture(){

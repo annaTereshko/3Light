@@ -3,9 +3,8 @@
 .text_container{
     height:auto;
     padding-right:0;
+    overflow:auto;
+
   }
-/*   #content_container {
-    margin-top: 15rem;
-  } */
 
 }

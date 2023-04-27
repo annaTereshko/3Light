@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="preload" href="img/yukka-slider-mobile.png" as="image" media="(max-width: 900px)">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/products.css">
         
@@ -35,7 +36,7 @@
                     </div>
                     <nav class="navigation navigation_desktop">        
                         <ul id="navigation_desktop">
-                            <li><a href="application-form.html">ФОРМА ЗАЯВКИ</a></li>
+                            <li><a href="application-form.php">ФОРМА ЗАЯВКИ</a></li>
                             <li><a href="index.html#products">ПРОДУКЦИЯ</a></li>
                             <li><a href="about-company.html">О КОМПАНИИ</a></li>
                             <li><a href="contact.html">КОНТАКТЫ</a></li>              
@@ -51,7 +52,7 @@
                 <div class="header">
                     <nav class="navigation">        
                             <ul id="navigation">
-                                <li><a href="application-form.html">ФОРМА ЗАЯВКИ</a></li>
+                                <li><a href="application-form.php">ФОРМА ЗАЯВКИ</a></li>
                                 <li><a href="index.html#products">ПРОДУКЦИЯ</a></li>
                                 <li><a href="about-company.html">О КОМПАНИИ</a></li>
                                 <li><a href="contact.html">КОНТАКТЫ</a></li>              
@@ -62,7 +63,7 @@
                     <div class = "slider_img background_yukka">
                         <picture>
                             <source srcset="img/yukka-slider-mobile.png" media="(max-width: 900px)" />
-                            <img class = "slider_img_mobile"src="" alt = "ЮККА"/>
+                            <img loading="lazy" decoding="async" class = "slider_img_mobile"src="" alt = "ЮККА" width="auto" height="100%"/>
                         </picture>
                     </div>          
                     <div class="flex arrow">
@@ -79,13 +80,13 @@
                         <div id="bigger" class="product_wrapper">
                             <picture>
                                 <source srcset="img/yukka_products_mobile.png" media="(max-width: 1000px)" />
-                                <img class="image smallImage_mobile" src="" alt = "ЮККА"/>
+                                <img loading="lazy" decoding="async" class="image smallImage_mobile" src="" alt = "ЮККА" width="auto" height="100%"/>
                             </picture>
                         </div>
                         <div class="product_wrapper">
                             <picture>
                                 <source srcset="img/yukka_model_mobile.png" media="(max-width: 1000px)" />
-                                <img class="image smallImage_mobile" src="" alt = "ЮККА чертёж"/>
+                                <img loading="lazy" decoding="async" class="image smallImage_mobile" src="" alt = "ЮККА чертёж" width="auto" height="100%"/>
                             </picture>
                         </div>
                     </div>
@@ -167,7 +168,7 @@
                         </div>
                         <picture class="hide_on_desktop">
                             <source srcset="img/yukka_diagram_mobile.png" media="(max-width: 1000px)" />
-                            <img class="image bigImage_mobile" src=""  alt = "ЮККА диаграма"/>
+                            <img loading="lazy" decoding="async" class="image bigImage_mobile" src=""  alt = "ЮККА диаграма" width="auto" height="100%"/>
                         </picture>
                     </div>
                 </div>
