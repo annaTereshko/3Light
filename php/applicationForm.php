@@ -15,13 +15,12 @@
         $name = cleanString($_POST['name']);
         $phone = cleanString($_POST['phone']);
         $message = cleanString($_POST['message']);
-        $subject = "Form submission"; 
-        $EmailBodyMessage = $name . " wrote the following:" . "\n\n" . $message;
+        $subject = "Форма заявки"; 
+        $EmailBodyMessage = $name . " написал:" . "\n\n" . $message;
 
         $errorEmail = checkEmail($from);	
 
-        $headers = "From:" . $from;
-        $headers2 = "From:" . $to;
+        $headers = "От:" . $from;
 
         if($errorEmail){
             // Fehlerfall

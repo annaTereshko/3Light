@@ -40,6 +40,7 @@ function changeZIndex(){
 
 function changeTransform() {
     location.reload();
+    document.getElementById("checkbox").checked = false;
 
 }
 
@@ -66,5 +67,5 @@ function zoomPicture(){
 }
 
 document.querySelector('#checkbox').addEventListener('click', changeZIndex);
-//document.querySelector('#anchor_index').addEventListener('click', changeTransform);
-document.querySelector('#bigger').addEventListener('click', zoomPicture);
+document.querySelector('#anchor_index').addEventListener('click', changeTransform);
+//document.querySelector('#bigger').addEventListener('click', zoomPicture);
