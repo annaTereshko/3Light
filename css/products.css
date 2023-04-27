@@ -135,6 +135,10 @@ main {
   margin: -7.5rem auto 1rem;
 }
 
+.hidden{
+  display: none;
+}
+
 /* body:not(main .flex-desktop .hide_on_desktop:first-of-type #bigger){
     filter:blur(3rem);
 } */
