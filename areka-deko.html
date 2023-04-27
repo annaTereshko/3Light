@@ -28,7 +28,14 @@
                 <a href=""><img src="img/logo-telegram.png" alt="Телеграм" class="telegram"></a>                    
             </div>
         </div>
-        <div class="main-container">
+        <div class="main-container" id="onload_content" class="hidden">
+            <script>
+                var img = new Image();
+                img.src = "img/areka-deko-slider-mobile.png";
+                img.onload = function () {
+                    document.getElementById('onload_content').className='';
+                }
+            </script>
                 <div class="nav_menu">
                     <div class="container__logo_menu">
                         <a href="index.html"><img src="img/menu-logo_mobile.png" alt="Логотип 3Light" class="logo_menu"></a>
@@ -61,7 +68,7 @@
                 <div id = "arrows" class="img_slider">
                     <div class = "slider_img background_areka-deko">
                         <picture>
-                            <source srcset="img/areka-deko-slider-desktop.png" media="(max-width: 900px)" />
+                            <source srcset="img/areka-deko-slider-mobile.png" media="(max-width: 900px)" />
                             <img loading="lazy" decoding="async" class = "slider_img_mobile" src="" alt = "АРЕКА ДЕКО" width="auto" height="100%"/>
                         </picture>
                     </div>          
@@ -72,14 +79,7 @@
                     <div class="collapse"><span class="slider_title">АРЕКА ДЕКО</span></div>
                 </div>
                 <hr class="shadow">
-            <main id="onload_content" class="hidden">
-                <script>
-                    var img = new Image();
-                    img.src = "img/areka-deko-slider-desktop.png";
-                    img.onload = function () {
-                        document.getElementById('onload_content').className='';
-                    }
-                </script>
+            <main>
                 <div class="flex flex-desktop">
                     <div class="title hide_on_desktop"><h2>ВНЕШНИЙ ВИД</h2></div>
                     <div class="flex hide_on_desktop">
