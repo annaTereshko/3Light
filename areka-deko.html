@@ -73,6 +73,14 @@
                 </div>
                 <hr class="shadow">
             <main id="onload_content" class="hidden">
+                <script>
+                    var img = new Image();
+                    img.src = "img/areka-deko-slider-mobile.png";
+                    img.onload = function () {
+                        document.getElementById('onload_content').className='';
+                        console.log("bla");
+                    }
+                </script>
                 <div class="flex flex-desktop">
                     <div class="title hide_on_desktop"><h2>ВНЕШНИЙ ВИД</h2></div>
                     <div class="flex hide_on_desktop">
@@ -179,14 +187,6 @@
             </footer>
         </div>
         <div id="wrapper"></div>
-        <script>
-            var img = new Image();
-    	    img.src = "img/areka-deko-slider-mobile.png";
-            img.onload = function () {
-                document.getElementById('onload_content').className='';
-                console.log("bla");
-            }
-        </script>
     <script src="js/main.js"></script>
     </body>
 </html>
