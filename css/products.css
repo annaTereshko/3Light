@@ -139,6 +139,17 @@ main {
   display: none;
 }
 
+#overlay {
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8rem);
+  display: none;
+}
+
 /* body:not(main .flex-desktop .hide_on_desktop:first-of-type #bigger){
     filter:blur(3rem);
 } */

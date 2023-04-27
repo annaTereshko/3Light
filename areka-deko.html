@@ -61,7 +61,7 @@
                 <div id = "arrows" class="img_slider">
                     <div class = "slider_img background_areka-deko">
                         <picture>
-                            <source srcset="img/areka-deko-slider-mobile.png" media="(max-width: 900px)" />
+                            <source srcset="img/areka-deko-slider-desktop.png" media="(max-width: 900px)" />
                             <img loading="lazy" decoding="async" class = "slider_img_mobile" src="" alt = "АРЕКА ДЕКО" width="auto" height="100%"/>
                         </picture>
                     </div>          
@@ -75,10 +75,9 @@
             <main id="onload_content" class="hidden">
                 <script>
                     var img = new Image();
-                    img.src = "img/areka-deko-slider-mobile.png";
+                    img.src = "img/areka-deko-slider-desktop.png";
                     img.onload = function () {
                         document.getElementById('onload_content').className='';
-                        console.log("bla");
                     }
                 </script>
                 <div class="flex flex-desktop">
@@ -187,6 +186,7 @@
             </footer>
         </div>
         <div id="wrapper"></div>
+        <div id="overlay"></div>
     <script src="js/main.js"></script>
     </body>
 </html>

@@ -44,26 +44,26 @@ function changeTransform() {
 
 function zoomPicture(){
     let zoom =  document.getElementById("bigger");
-    let wrapper =  document.getElementById("wrapper");
+    let overlay =  document.getElementById("overlay");
     let bluredArea = document.querySelector("body:not(#bigger)");
     if(zoom.getAttribute('state') && zoom.getAttribute('state') === 'zoomed'){
         zoom.style.transform = 'none';
         zoom.style.position = "static";
         zoom.setAttribute('state', 'not-zoomed');
         bluredArea.style.filter = "blur(0)";
+        location.reload();
+
     }else{
-        zoom.style.transform = "scale(2) translate(22.5%,-45%)";
+        zoom.style.transform = "scale(2) translate(22.5%,-80%)";
         zoom.style.position = "fixed";
         zoom.setAttribute('state', 'zoomed');
-        // bluredArea.style.filter = "blur(5rem)";
-/*         wrapper.style.height = "100vh";
-        wrapper.style.background = "rgba(0,0,0,.8)";
-        wrapper.style.position ="absolute";
-        wrapper.style.zIndex ="100"; */
+        overlay.style.display = "block";
+        overlay.style.zIndex = "9";
+        zoom.style.zIndex = "10";
     }
 
 }
 
 document.querySelector('#checkbox').addEventListener('click', changeZIndex);
-document.querySelector('#anchor_index').addEventListener('click', changeTransform);
-// document.querySelector('#bigger').addEventListener('click', zoomPicture);
+//document.querySelector('#anchor_index').addEventListener('click', changeTransform);
+document.querySelector('#bigger').addEventListener('click', zoomPicture);
