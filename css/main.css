@@ -22,6 +22,7 @@ body::-webkit-scrollbar-thumb{
 
 html {
     min-height: 100%;
+    font-size: 62.5%;
 }
 
 @font-face {
@@ -60,8 +61,8 @@ body {
 
   } */
 
-html {
-  font-size: 62.5%;
+a {
+  color: rgba(225, 225, 225, 0.8);
 }
 
 .invisible{
