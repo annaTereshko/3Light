@@ -56,7 +56,7 @@ function zoomPicture(){
         location.reload();
 
     }else{
-        zoom.style.transform = "scale(2) translate(22.5%,-80%)";
+        zoom.style.transform = "scale(2) translate(22.5%,-95%)";
         zoom.style.position = "fixed";
         zoom.setAttribute('state', 'zoomed');
         overlay.style.display = "block";
