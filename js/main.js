@@ -65,7 +65,15 @@ function zoomPicture(){
     }
 
 }
+ 
+let elementExists_anchor = document.getElementById("anchor_index");
+let elementExists_product = document.getElementById("bigger");
+
 
 document.querySelector('#checkbox').addEventListener('click', changeZIndex);
-document.querySelector('#anchor_index').addEventListener('click', changeTransform);
-//document.querySelector('#bigger').addEventListener('click', zoomPicture);
+if (typeof(elementExists_anchor) != 'undefined' && elementExists_anchor != null) {
+    document.querySelector('#anchor_index').addEventListener('click', changeTransform);
+}
+if (typeof(elementExists_product) != 'undefined' && elementExists_product != null) {
+    document.querySelector('#bigger').addEventListener('click', zoomPicture);
+}
