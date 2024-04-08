@@ -143,7 +143,7 @@ main {
   display: none;
   position: relative;
   width: 100%;
-  height: calc(100vh - 13.2rem);
+  height: calc(100vh - 13rem);
   padding-top: 6.6rem;
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(8rem);
