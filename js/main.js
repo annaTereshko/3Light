@@ -1,4 +1,3 @@
-
 function changeZIndex(){
 
     let products = document.getElementsByClassName("product");
@@ -56,7 +55,7 @@ function zoomPicture(){
         location.reload();
 
     }else{
-        zoom.style.transform = "scale(2) translate(22.5%,-95%)";
+        zoom.style.transform = "scale(2) translate(22.5%,-100%)";
         zoom.style.position = "fixed";
         zoom.setAttribute('state', 'zoomed');
         overlay.style.display = "block";
