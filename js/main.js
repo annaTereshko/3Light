@@ -53,7 +53,6 @@ function zoomPicture(){
         zoom.style.position = "static";
         zoom.setAttribute('state', 'not-zoomed');
         bluredArea.style.filter = "blur(0)";
-        document.body.style.overflow = 'none';
         location.reload();
 
     }else{
@@ -63,7 +62,6 @@ function zoomPicture(){
         overlay.style.display = "block";
         overlay.style.zIndex = "9";
         zoom.style.zIndex = "10";
-        document.body.style.overflow = 'hidden';
     }
 
 }
